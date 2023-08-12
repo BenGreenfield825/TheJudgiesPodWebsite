@@ -1,4 +1,4 @@
-import config from "./judgies-website/src/config.js";
+import config from "../config";
 const apiKey = config.apiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
 
@@ -16,3 +16,20 @@ fetch(
   .catch((error) => {
     console.error("Error fetching video:", error);
   });
+
+
+
+  function Video() {
+    return (
+      <div className="Video">
+        <header className="Video-header">
+          <p>I am video</p>
+          <div id="video-container">
+
+          </div>
+        </header>
+      </div>
+    );
+  }
+  
+  export default Video;
