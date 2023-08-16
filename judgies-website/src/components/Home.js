@@ -3,12 +3,9 @@
 function Home() {
   return (
     <div className="Home">
-      <div style={{
-        display: "flex",
-        justifyContent: "center"
-      }}></div>
-
-      <div>Hello</div>
+      <header className="Home-header">
+        <p>Hello</p>
+      </header>
     </div>
   );
 }

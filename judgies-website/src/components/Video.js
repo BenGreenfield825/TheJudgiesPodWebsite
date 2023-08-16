@@ -3,6 +3,7 @@ import gifHeads from "../styles/gifHeads.css";
 import JoshGIF from "../media/gifs/JoshGIF.gif";
 import ErikaGIF from "../media/gifs/ErikaGIF.gif";
 import ChristianGIF from "../media/gifs/ChristianGIF.gif";
+import background from "../media/90sBackground.jpg";
 const apiKey = config.apiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
 
@@ -22,9 +23,20 @@ fetch(
   });
 
 //TODO: edit video frame and gif heads to be dynamic size
+//TODO: put the background image code somewhere else
 function Video() {
   return (
-    <div className="Video" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+    <div
+      className="Video"
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        backgroundImage: `url(${background})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div style={{ display: "flex", flexDirection: "column" }}>
         <img className="gifHead" src={JoshGIF} alt="JoshGIF" />
         <img className="gifHead" src={ErikaGIF} alt="ErikaGIF" />
