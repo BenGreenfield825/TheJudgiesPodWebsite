@@ -1,4 +1,8 @@
 import config from "../config";
+import gifHeads from "../styles/gifHeads.css";
+import JoshGIF from "../media/gifs/JoshGIF.gif";
+import ErikaGIF from "../media/gifs/ErikaGIF.gif";
+import ChristianGIF from "../media/gifs/ChristianGIF.gif";
 const apiKey = config.apiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
 
@@ -17,19 +21,20 @@ fetch(
     console.error("Error fetching video:", error);
   });
 
-
-
-  function Video() {
-    return (
-      <div className="Video">
-        <header className="Video-header">
-          <p>I am video</p>
-          <div id="video-container">
-
-          </div>
-        </header>
+//TODO: edit video frame and gif heads to be dynamic size
+function Video() {
+  return (
+    <div className="Video" style={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <img className="gifHead" src={JoshGIF} alt="JoshGIF" />
+        <img className="gifHead" src={ErikaGIF} alt="ErikaGIF" />
       </div>
-    );
-  }
-  
-  export default Video;
+      <div id="video-container"></div>
+      <div>
+        <img className="gifHead" src={ChristianGIF} alt="ChristianGIF" />
+      </div>
+    </div>
+  );
+}
+
+export default Video;
