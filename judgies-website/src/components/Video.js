@@ -1,9 +1,12 @@
 import config from "../config";
-import gifHeads from "../styles/gifHeads.css";
+import "../styles/gifHeads.css";
+import "../styles/Video.css";
 import JoshGIF from "../media/gifs/JoshGIF.gif";
 import ErikaGIF from "../media/gifs/ErikaGIF.gif";
 import ChristianGIF from "../media/gifs/ChristianGIF.gif";
 import background from "../media/90sBackground.jpg";
+import logo from "../media/channelPfp.png";
+
 const apiKey = config.apiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
 
@@ -29,22 +32,25 @@ function Video() {
     <div
       className="Video"
       style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
         backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
       }}
     >
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div>
+        {/* <img className="logo" src={logo} alt="Logo" /> */}
+      </div>
+
+      <div className="centerPiece">
+      <div className="gifSection">
         <img className="gifHead" src={JoshGIF} alt="JoshGIF" />
         <img className="gifHead" src={ErikaGIF} alt="ErikaGIF" />
       </div>
       <div id="video-container"></div>
-      <div>
+      <div className="gifSection">
         <img className="gifHead" src={ChristianGIF} alt="ChristianGIF" />
       </div>
+      </div>
+
+      
     </div>
   );
 }

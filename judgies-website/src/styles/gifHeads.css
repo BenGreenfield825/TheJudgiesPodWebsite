@@ -1,4 +1,17 @@
 .gifHead {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+}
+
+.gifSection {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+    /* Apply styles for screens with a maximum width of 768px (typical tablet and mobile sizes) */
+    .gifSection {
+        flex-direction: row;
+    }
 }
