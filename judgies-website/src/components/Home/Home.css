@@ -1,37 +1,33 @@
-.Video {
+.Home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* outline: 10px solid black; */
+    /* min-height: 100vh; */
+    /* outline: 5px solid black; */
 }
 
-
-.Video .centerPiece {
-    height: 100vh;
-    width: 100vw;
+.LogoContainer {
+    max-width: 50%; /* Adjust the container's width as needed */
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* outline: 1px solid black; */
+    padding-top: 5%;
+    margin-bottom: 20%;
 }
 
-.Video iframe {
-    max-width: 100%; /* Ensure the video doesn't exceed the container's width */
-    /* padding: auto; */
-  }
-
-.logo {
-    max-width: 50%;
+.Logo {
+    max-width: 100%;
+    width: 70%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
 
     /* Apply styles for screens with a maximum width of 768px (typical tablet and mobile sizes) */
-    .Video .centerPiece{
-        flex-direction: column;
+    .Logo {
+        width: 100%;
     }
 }
