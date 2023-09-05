@@ -10,12 +10,12 @@
 }
 
 .LogoContainer {
-    max-width: 50%; /* Adjust the container's width as needed */
+    max-width: 35%; /* Adjust the container's width as needed */
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 
 .Logo {

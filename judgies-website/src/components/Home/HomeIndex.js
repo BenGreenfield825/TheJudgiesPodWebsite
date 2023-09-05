@@ -1,5 +1,6 @@
 import logo from "../../media/channelPfp.png";
 import background from "../../media/90sBackground.jpg";
+// import background from "../../media/80sBackground.svg";
 import "./Home.css"
 import Video from "../Video/VideoIndex"
 
