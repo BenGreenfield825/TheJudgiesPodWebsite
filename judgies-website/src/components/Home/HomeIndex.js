@@ -3,6 +3,7 @@ import background from "../../media/90sBackground.jpg";
 // import background from "../../media/80sBackground.svg";
 import "./Home.css"
 import Video from "../Video/VideoIndex"
+import ExternalLinkSection from "../ExternalLinkSection/ExternalLinkSection";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <img className="Logo" src={logo} alt="Logo" />
       </div>
       <Video/>
+      <ExternalLinkSection />
       
     </div>
   );

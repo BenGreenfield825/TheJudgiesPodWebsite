@@ -4,6 +4,7 @@ import "./Video.css";
 import JoshGIF from "../../media/gifs/JoshGIF.gif";
 import ErikaGIF from "../../media/gifs/ErikaGIF.gif";
 import ChristianGIF from "../../media/gifs/ChristianGIF.gif";
+import carrotGIF from "../../media/gifs/carrotGIF.gif"
 
 const API_KEY = config.TESTapiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
@@ -36,6 +37,7 @@ function Video() {
         <div id="video-container"></div>
         <div className="gifSection">
           <img className="gifHead" src={ChristianGIF} alt="ChristianGIF" />
+          <img className="gifHead" src={carrotGIF} alt="carrotGIF" />
         </div>
       </div>
     </div>

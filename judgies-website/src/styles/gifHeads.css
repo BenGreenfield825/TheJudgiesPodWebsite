@@ -15,4 +15,8 @@
     .gifSection {
         flex-direction: row;
     }
+    .gifHead {
+        height: auto;
+        max-width: 35vw;
+    }
 }
