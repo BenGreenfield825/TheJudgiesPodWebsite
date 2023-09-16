@@ -1,0 +1,33 @@
+.Video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* outline: 5px solid black; */
+}
+
+
+.centerPiece {
+    /* height: 30vh; */
+    width: 100vw; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background-color: beige;
+    border-radius: 10%; */
+}
+
+.Video iframe {
+    max-width: 100vw; 
+  }
+
+
+@media (max-width: 768px) {
+
+    /* Apply styles for screens with a maximum width of 768px (typical tablet and mobile sizes) */
+    .Video .centerPiece{
+        flex-direction: column;
+    }
+}
