@@ -6,7 +6,7 @@ import ErikaGIF from "../../media/gifs/ErikaGIF.gif";
 import ChristianGIF from "../../media/gifs/ChristianGIF.gif";
 import carrotGIF from "../../media/gifs/carrotGIF.gif"
 
-const API_KEY = config.apiKey;
+const API_KEY = config.TESTapiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
 
 // Make an API request to get the latest video from the channel
