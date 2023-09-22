@@ -4,14 +4,14 @@ import "./Video.css";
 import JoshGIF from "../../media/gifs/JoshGIF.gif";
 import ErikaGIF from "../../media/gifs/ErikaGIF.gif";
 import ChristianGIF from "../../media/gifs/ChristianGIF.gif";
-import carrotGIF from "../../media/gifs/carrotGIF.gif"
+import carrotGIF from "../../media/gifs/croppedCarrot.gif"
 
 const API_KEY = config.TESTapiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
 
 // Make an API request to get the latest video from the channel
 fetch(
-  `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channelId}&order=date&part=snippet&type=video&maxResults=1`
+  // `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${channelId}&order=date&part=snippet&type=video&maxResults=1`
 )
   .then((response) => response.json())
   .then(async (data) => {
@@ -34,7 +34,9 @@ function Video() {
           <img className="gifHead" src={JoshGIF} alt="JoshGIF" />
           <img className="gifHead" src={ErikaGIF} alt="ErikaGIF" />
         </div>
-        <div id="video-container"></div>
+        <div id="video-container">
+          <iframe></iframe>
+        </div>
         <div className="gifSection">
           <img className="gifHead" src={ChristianGIF} alt="ChristianGIF" />
           <img className="gifHead" src={carrotGIF} alt="carrotGIF" />
