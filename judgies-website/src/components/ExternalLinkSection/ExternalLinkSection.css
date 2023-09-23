@@ -1,10 +1,17 @@
 .ExternalLinkSection {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90vw;
+}
+
+.iconSection {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    max-width: 30vw;
-    /* height: auto; */
+    max-width: 20vw;
 }
 
 .LogoCircle {
@@ -16,7 +23,31 @@
     max-width: 50vw;
 }
 
-.Icon {
-    /* height: auto; */
-    max-width: 10vw;
+.message {
+    font-family: "Cooper Black", sans-serif;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    font-size: 200%;
+    max-width: 90vw;
+    margin-top: 5%;
+    text-align: center;
 }
+
+.Icon {
+    max-width: 5vw;
+}
+
+@media (max-width: 768px) {
+    .Icon {
+        max-width: 10vw;
+    }
+    .iconSection {
+        max-width: 90vw;
+    }
+    .message {
+        font-size: 100%;
+        max-width: 75vw;
+    }
+  }
+  
