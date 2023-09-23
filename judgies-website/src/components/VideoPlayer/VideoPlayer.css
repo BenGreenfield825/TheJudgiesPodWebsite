@@ -1,0 +1,12 @@
+.videoPlayer {
+    aspect-ratio: 16/9;
+    width: 40vw;
+}
+
+@media (max-width: 768px) {
+
+    /* Apply styles for screens with a maximum width of 768px (typical tablet and mobile sizes) */
+    .videoPlayer{
+        width: 90vw;
+    }
+}

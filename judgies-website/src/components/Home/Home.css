@@ -6,17 +6,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    /* outline: 5px solid black; */
 }
 
 .LogoContainer {
-    max-width: 35%; /* Adjust the container's width as needed */
+    max-width: 35%; 
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 5%; */
-    margin-bottom: 5%;
-    /* padding-bottom: 50%; */
+    margin-bottom: 3%;
 }
 
 .Logo {
@@ -26,13 +23,11 @@
 }
 
 .Message {
-    font-family: "Cooper Black", sans-serif;
-    font-size: 5vw;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
 }
 
 .MessageImg {
-    max-width: 100vw;
+    max-width: 60vw;
 }
 
 @font-face {
@@ -47,5 +42,8 @@
         margin-top: 5%;
         height: auto;
         width: 100vw;
+    }
+    .MessageImg {
+        max-width: 95vw;
     }
 }
