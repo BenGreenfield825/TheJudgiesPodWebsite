@@ -6,6 +6,7 @@ import ErikaGIF from "../../media/gifs/ErikaGIF.gif";
 import ChristianGIF from "../../media/gifs/ChristianGIF.gif";
 import carrotGIF from "../../media/gifs/croppedCarrot.gif";
 import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import VideoError from "../VideoError/VideoError";
 
 const API_KEY = config.apiKey;
 const channelId = "UCwDbo_sKQX-ymY3d-Q1HxGQ";
@@ -38,7 +39,7 @@ function VideoSection() {
           <img className="gifHead" src={ErikaGIF} alt="ErikaGIF" />
         </div>
         <div id="videoContainer">
-          <VideoPlayer videoId={idTest} />
+          {idTest ? <VideoPlayer videoId={idTest}/>: <VideoError />}
         </div>
         <div className="gifSection">
           <img className="gifHead" src={ChristianGIF} alt="ChristianGIF" />
