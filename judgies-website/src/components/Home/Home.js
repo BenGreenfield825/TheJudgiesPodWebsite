@@ -4,6 +4,7 @@ import messageImg from "../../media/Oops All New Content.png"
 import "./Home.css";
 import VideoSection from "../VideoSection/VideoSection";
 import ExternalLinkSection from "../ExternalLinkSection/ExternalLinkSection";
+import News from "../News/News";
 
 function Home() {
   return (
@@ -15,6 +16,9 @@ function Home() {
     >
       <div className="LogoContainer">
         <img className="Logo" src={logo} alt="Logo" />
+      </div>
+      <div>
+        <News />
       </div>
       <div className="Message">
         <img className="MessageImg" src={messageImg} alt="Oops! All New Content!"/>
